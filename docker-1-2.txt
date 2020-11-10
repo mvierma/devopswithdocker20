@@ -1,0 +1,5 @@
+(base) mvierma@mvierma-ThinkPad-T460:~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+(base) mvierma@mvierma-ThinkPad-T460:~$ docker ps -as
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES               SIZE
+

@@ -1,0 +1,6 @@
+(base) mvierma@mvierma-ThinkPad-T460:~$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+a30b0927aa4d        nginx               /docker-entrypoint.…   44 seconds ago       Exited (0) 10 seconds ago                       keen_pare
+47606211de5c        nginx               /docker-entrypoint.…   About a minute ago   Up About a minute           80/tcp              magical_proskuriakova
+206b7aa692e9        nginx               /docker-entrypoint.…   4 minutes ago        Exited (0) 10 seconds ago                       charming_solomon
+
