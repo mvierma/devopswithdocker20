@@ -1,0 +1,19 @@
+(base) mvierma@mvierma-ThinkPad-T460:~/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-6$ docker build -t docker-clock .
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
+ ---> 3d2b622b1849
+Step 2/2 : CMD [-c]
+ ---> Running in 3e4e4c323d0e
+Removing intermediate container 3e4e4c323d0e
+ ---> bf38a62ce509
+Successfully built bf38a62ce509
+Successfully tagged docker-clock:latest
+(base) mvierma@mvierma-ThinkPad-T460:~/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-6$ docker run docker-clock
+
+
+
+
+Dockerfile contents:
+
+FROM devopsdockeruh/overwrite_cmd_exercise
+CMD ["-c"]
