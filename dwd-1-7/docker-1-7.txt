@@ -1,0 +1,30 @@
+(base) mvierma@mvierma-ThinkPad-T460:~/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-7$ docker build -t curler .
+Sending build context to Docker daemon  3.072kB
+Step 1/5 : FROM ubuntu:16.04
+ ---> dfeff22e96ae
+Step 2/5 : RUN apt-get update -qq && apt-get install curl -y -qq >/dev/null
+ ---> Using cache
+ ---> 1b615c5ba010
+Step 3/5 : COPY script.sh .
+ ---> 05e27aece260
+Step 4/5 : RUN chmod +x script.sh
+ ---> Running in 37b8cd53ad80
+Removing intermediate container 37b8cd53ad80
+ ---> 97aca453cec9
+Step 5/5 : CMD [./script.sh]
+ ---> Running in 3bf8b905729b
+Removing intermediate container 3bf8b905729b
+ ---> aa20affaa2f7
+Successfully built aa20affaa2f7
+Successfully tagged curler:latest
+(base) mvierma@mvierma-ThinkPad-T460:~/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-7$ docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href=http://www.helsinki.fi/>here</a>.</p>
+</body></html>
+
