@@ -1,0 +1,11 @@
+(base) mvierma@mvierma-ThinkPad-T460:~$ docker run -it --name website-app ubuntu sh -c 'apt-get update -qq > /dev/null && apt-get install curl -y -qq > /dev/null; echo Input website:; read website; echo searching..; sleep 1; curl http://;'
+debconf: delaying package configuration, since apt-utils is not installed
+Input website:
+helsinki.fi
+searching..
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href=http://www.helsinki.fi/>here</a>.</p>
+</body></html>
