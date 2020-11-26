@@ -1,0 +1,2 @@
+(base) mvierma@mvierma-ThinkPad-T460:~/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-8$ docker run -v /home/mvierma/Projects/Studies/HY/DevOpsWithDocker20/dwd-1-8/logs/logs/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+
